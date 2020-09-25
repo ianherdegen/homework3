@@ -13,6 +13,8 @@ body{
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-color: #DDDDDD;
   background-size: cover ;
   background-position: center;
 }
@@ -24,6 +26,8 @@ main{
 h1{
   color: #c12258;
   font-size: 2em;
+  text-align: center;
+  line-height: 2;
 }
 
 caption{
@@ -31,32 +35,51 @@ caption{
 }
 
 p{
-
+  padding-top: 15px;
 }
 
 a{
-
+  font-size: 16px;
+  color: #B21F50;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 table{
     border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 2px;
+    border-color: #000000;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .colhead{
   background-color: #7e0830;
   color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
 }
 
 .rowhead{
-
+  border: 2px;
+  border-color:#000000;
 }
 
 td{
   
 }
 
-tr{
+tr:nth-child(even) {background: #D1D1D1}
+tr:nth-child(odd) {background: transparent}
 
+tr:hover {
+  background: #7e0830;
+  opacity: .25;
 }
 
 *{
@@ -67,8 +90,17 @@ thead tr:first-child th:first-child{}
 
 footer{
   width:100%;
+  position: absolute;
+  bottom: 0;
+  min-height: 75px;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+}
+
+:focus{
+  border: 3px;
+  border-style: dashed;
+  border-color: #417243;
 }
 
