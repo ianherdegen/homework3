@@ -58,7 +58,7 @@ table{
 }
 
 .colhead{
-  background-color: #7e0830;
+  background-color: #7e0820;
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
@@ -80,8 +80,8 @@ td{
 }
 
 thead tr:first-child th:f
-tr:nth-child(even) {background: #D1D1D1}
-tr:nth-child(odd) {background: transparent}
+tr:nth-child(even) {background-color: #D1D1D1}
+tr:nth-child(odd) {background-color: transparent}
 
 tr:hover {
   background-color: rgba(126,8,32,.25);
