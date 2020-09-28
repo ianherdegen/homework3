@@ -17,6 +17,7 @@ body{
   background-color: #DDDDDD;
   background-size: cover ;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 main{
@@ -47,13 +48,13 @@ a{
 
 table{
     border: 2px solid #000000;
-    border-radius: 10px;
     text-align: center;
     border-top: 2px;
     border-color: #000000;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 
 .colhead{
@@ -62,45 +63,58 @@ table{
   min-width: 125px;
   padding: 10px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .rowhead{
-  border: 2px;
-  border-color:#000000;
+  border: 2px solid #000000;
+  border-color:2px solid #000000;
 }
 
 td{
-  
+  text-align: center;
+  vertical-align: middle;
+  border-top: 2px solid #000000;
+  padding: 10px;
 }
 
+thead tr:first-child th:f
 tr:nth-child(even) {background: #D1D1D1}
 tr:nth-child(odd) {background: transparent}
 
 tr:hover {
-  background: #7e0830;
-  opacity: .25;
+  background-color: rgba(126,8,32,.25);
 }
 
-*{
-
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
 }
 
-thead tr:first-child th:first-child{}
+thead tr:last-child th:last-child{
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
 
 footer{
   width:100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0px;
   min-height: 75px;
-  background:#000000;
+  background-color:#000000;
   text-align:center;
   color: #FFFFFF;
 }
 
 :focus{
-  border: 3px;
-  border-style: dashed;
-  border-color: #417243;
+  border: 3px dashed #417243;
 }
 
